@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* START OF OUTLINE */
+.main-container{
+    display: flex;
+}
+
+.left, .right{
+    width: 50%;
+    height: 100vh;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.mid{
+    border: solid 5px black;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    height: 30%;
+}
+
+.top-line{
+    border: solid black;
+    position: absolute;
+    height: 34%;
+    top: 0px;
+    left: 49.85%;
+}
+
+.bottom-line{
+    border: solid black;
+    position: absolute;
+    height: 35%;
+    top: 65%;
+    left: 49.85%;
+}
+/* END OF OUTLINE */
+
+/* START OF LEFT SIDE CODE */
+.left .pic{
+    border: solid black;
+    height: 20%;
+}
+
+.left .details{
+    border: solid black;
+    border-right: none;
+    height: 60%;
+}
+
+.left .socials{
+    border: solid black;
+    height: 20%;
+}
+
+/* START OF RIGHT SIDE CODE */
+.right .pic{
+    border: solid black;
+    height: 20%;
+}
+
+.right .details{
+    border: solid black;
+    border-left: none;
+    height: 60%;
+}
+
+.right .socials{
+    border: solid black;
+    height: 20%;
+}
