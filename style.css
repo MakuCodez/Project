@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Lexend;
 }
 
 /* START OF OUTLINE */
@@ -21,6 +22,9 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0%;
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .right{
@@ -64,16 +68,91 @@ body{
     height: 20%;
 }
 
+.left .pic img{
+    width: auto;
+    height: 100px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
 .left .details{
     border: solid black;
     border-right: none;
-    height: 60%;
+    height: 70%;
+}
+
+.info{
+    padding: 20px;
+    font-size: 25px;
 }
 
 .left .socials{
     border: solid black;
-    height: 20%;
+    height: 10%;
+    padding: 30px;
 }
+
+.socials .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    background: white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    transition:  all 0.4s ease-out;
+    overflow: hidden;
+}
+
+.socials .button:hover{
+    width: 200px;
+    background: #fff;
+}
+
+.socials .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    text-align: center;
+    transition:  all 0.4s ease-out;
+}
+
+.socials .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition:  all 0.4s ease-out;
+}
+
+.socials .button:hover .icon i{
+    color: #fff;
+}
+
+.socials .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.socials .button:nth-child(1):hover .icon{
+    background: #4767B2;
+}
+
+.socials .button:nth-child(2):hover .icon{
+    background: #E1306C;
+}
+
+.socials .button:nth-child(3):hover .icon{
+    background: #1DA1F2;
+}
+
+
+
 
 /* START OF RIGHT SIDE CODE */
 .right .pic{
@@ -84,10 +163,11 @@ body{
 .right .details{
     border: solid black;
     border-left: none;
-    height: 60%;
+    height: 70%;
 }
 
 .right .socials{
     border: solid black;
-    height: 20%;
+    height: 10%;
+    padding: 30px;
 }
