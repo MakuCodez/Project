@@ -20,12 +20,14 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
+    padding: 0%;
 }
 
 .right{
     display: flex;
     flex-direction: column;
     margin: 0;
+    padding: 0%;
 }
 
 .mid{
@@ -50,7 +52,7 @@ body{
 .bottom-line{
     border: solid black;
     position: absolute;
-    height: 35%;
+    height: 33%;
     top: 65%;
     left: 49.85%;
 }
