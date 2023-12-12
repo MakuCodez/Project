@@ -54,12 +54,18 @@ body{
 }
 
 .left .header .pic img{
-    height: 80px;
-    width:  80px;
+    height: 100px;
+    width:  100px;
     border-radius: 50%;
     margin-left: 40px;
     background-color: white;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.left .header .bible{
+    color:white;
+    margin-left: 20px;
+    font-size: 20px;
 }
 
 .left .details{
@@ -76,8 +82,7 @@ body{
 .left .details .button .age,
 .left .details .button .bday,
 .left .details .button .quote,
-.left .details .button .hobbies
-{
+.left .details .button .hobbies {
     display: inline-block;
     height: 70px;
     width: 130px;
@@ -95,8 +100,7 @@ body{
 .left .details .button .name:hover,
 .left .details .button .age:hover,
 .left .details .button .bday:hover,
-.left .details .button .quote:hover
-{
+.left .details .button .quote:hover {
     width: 300px;
 }
 
@@ -224,19 +228,28 @@ body{
     height: 20%;
     display: flex;
     align-items: center;
-}
-
-.right .header .pic{
-    margin-right: 30px;
     margin-left: auto;
+    margin-right: 40px;
 }
 
 .right .header .pic img{
-    height: 80px;
-    width:  80px;
+    height: 100px;
+    width:  100px;
     border-radius: 50%;
     background-color: white;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.right .header .bible{
+    color:white;
+    font-size:20px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.right .header .bible .book,
+.right .header .bible .verse,
+.right .header .bible .versetwo{
 }
 
 .right .details{
@@ -276,8 +289,7 @@ body{
 
 .right .details .button .name:hover,
 .right .details .button .age:hover,
-.right .details .button .bday:hover
-{
+.right .details .button .bday:hover {
     width: 300px;
 }
 
