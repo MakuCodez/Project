@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/valorant');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300;400;700&family=Lexend:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300;400;700&family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Valorant, Lexend;
+    font-family: Poppins, Kalnia, Lexend, Valorant;
 }
 
 /* START OF OUTLINE */
@@ -27,7 +29,7 @@ body{
     background-size: cover;
     background-position: 0px -30px;
     background-repeat: no-repeat;
-    border-right: solid black 2px;
+    border-right: solid #fff 1px;
 }
 
 .right{
@@ -35,20 +37,6 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0%;
-}
-
-.mid{
-    border: solid #000000 2px;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 200px;
-    height: 200px;
-    background-image: url(Images/logo.png);
-    background-position: center;
-    background-size: cover;
 }
 
 /* .top-line{
@@ -68,6 +56,10 @@ body{
 } */
 /* END OF OUTLINE */
 
+
+
+
+
 /* START OF LEFT SIDE CODE */
 .left .header{
     height: 20%;
@@ -82,11 +74,11 @@ body{
     padding-left: 20px;
 } */
 
-.left .header .pic{
-    height: 100px;
-    width:  100px;
+.left .header .pic img{
+    height: 80px;
+    width:  80px;
     border-radius: 50%;
-    margin-left: 30px;
+    margin-left: 40px;
     background-color: white;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
@@ -101,7 +93,12 @@ body{
     font-size: 18px;
 }
 
-.details .button{
+.left .details .button .name,
+.left .details .button .age,
+.left .details .button .bday,
+.left .details .button .quote,
+.left .details .button .hobbies
+{
     display: inline-block;
     height: 70px;
     width: 130px;
@@ -115,23 +112,31 @@ body{
     overflow: hidden;
 }
 
-.details .button:hover{
+.left .details .button .name:hover,
+.left .details .button .age:hover,
+.left .details .button .bday:hover,
+.left .details .button .quote:hover
+{
     width: 300px;
 }
 
-.details .button .name::before {
+.left .details .button .hobbies:hover{
+    width: 500px;
+}
+
+.left .details .button .name::before {
     content: "Name";
   }
 
-.details .button .name:hover::before {
+.left .details .button .name:hover::before {
     content: "Mark David L. Basinillo";
 }
 
-.details .button .age::before {
+.left .details .button .age::before {
     content: "Age";
   }
 
-.details .button .age:hover::before {
+.left .details .button .age:hover::before {
     content: "20 years old";
 }
 
@@ -139,24 +144,24 @@ body{
     content: "Bday";
   }
 
-.details .button .bday:hover::before {
+.left .details .button .bday:hover::before {
     content: "June 28, 2003";
 }
 
-.details .button .quote::before {
+.left .details .button .quote::before {
     content: "Quote";
   }
 
-.details .button .quote:hover::before {
-    content: "Live your life";
+.left .details .button .quote:hover::before {
+    content: "Be better than yesterday";
 }
 
-.details .button .hobbies::before {
+.left .details .button .hobbies::before {
     content: "Hobbies";
   }
 
-.details .button .hobbies:hover::before {
-    content: "Gaming, Music";
+.left .details .button .hobbies:hover::before {
+    content: "Gaming, Singing, Watching Movies and KDramas";
 }
 
 .left .socials{
@@ -229,6 +234,7 @@ body{
     background: #1DA1F2;
 }
 
+
 /* START OF RIGHT SIDE CODE */
 .right .badges{
     border: solid black;
@@ -236,10 +242,94 @@ body{
 }
 
 .right .details{
-    border: solid black;
-    border-left: none;
+    border-right: none;
     height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 35px;
+    font-size: 18px;
 }
+
+.right .details .button{
+    margin-right: 30px;
+    margin-left: auto;
+}
+
+.right .details .button .name,
+.right .details .button .age,
+.right .details .button .bday,
+.right .details .button .quote,
+.right .details .button .hobbies
+{
+    display: inline-block;
+    height: 70px;
+    width: 130px;
+    background: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 65px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    transition:  all 0.4s ease-out;
+    overflow: hidden;
+}
+
+.right .details .button .name:hover,
+.right .details .button .age:hover,
+.right .details .button .bday:hover
+{
+    width: 300px;
+}
+
+.right .details .button .quote:hover{
+    width: 420px;
+}
+
+.right .details .button .hobbies:hover{
+    width: 500px;
+}
+
+.right .details .button .name::before {
+    content: "Name";
+  }
+
+.right .details .button .name:hover::before {
+    content: "Andrea Joy N. Dela Torre";
+}
+
+.right .details .button .age::before {
+    content: "Age";
+  }
+
+.right .details .button .age:hover::before {
+    content: "20 years old";
+}
+
+.right .details .button .bday::before {
+    content: "Bday";
+  }
+
+.right .details .button .bday:hover::before {
+    content: "August 22, 2003";
+}
+
+.right .details .button .quote::before {
+    content: "Quote";
+  }
+
+.right .details .button .quote:hover::before {
+    content: "It may be difficult but not impossible";
+}
+
+.right .details .button .hobbies::before {
+    content: "Hobbies";
+  }
+
+.right .details .button .hobbies:hover::before {
+    content: "Gaming, Listening to Music, and Singing";
+}
+
 
 .right .socials{
     border: solid black;
@@ -247,7 +337,19 @@ body{
     padding: 30px;
 }
 
+
 /* START OF MID CONTAINER */
 .mid{
-    background-color: whitesmoke;
+    border: solid #fff 1px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    background-image: url(Images/logo.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
