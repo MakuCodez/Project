@@ -41,28 +41,9 @@ body{
     background-size: 200%;
     background-position: -550px -350px;
     background-repeat: no-repeat;
-    border-right: solid #fff 1px;
+    border-left: solid #fff 1px;
 }
-
-/* .top-line{
-    border: solid black;
-    position: absolute;
-    height: 35.5%;
-    top: 0px;
-    left: 49.85%;
-}
-
-.bottom-line{
-    border: solid black;
-    position: relative;
-    height: 33%;
-    top: 64%;
-    left: 49.85%;
-} */
 /* END OF OUTLINE */
-
-
-
 
 
 /* START OF LEFT SIDE CODE */
@@ -71,13 +52,6 @@ body{
     display: flex;
     align-items: center;
 }
-
-/* .left .pic img{
-    width: auto;
-    height: 100px;
-    padding-top: 20px;
-    padding-left: 20px;
-} */
 
 .left .header .pic img{
     height: 80px;
@@ -397,7 +371,7 @@ body{
 
 /* START OF MID CONTAINER */
 .mid{
-    border: solid #fff 1px;
+    border: solid #fff 2px;
     border-radius: 50%;
     position: absolute;
     top: 50%;
