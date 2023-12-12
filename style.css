@@ -37,6 +37,11 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0%;
+    background-image: url("Images/andrea.jpg");
+    background-size: 200%;
+    background-position: -550px -350px;
+    background-repeat: no-repeat;
+    border-right: solid #fff 1px;
 }
 
 /* .top-line{
@@ -102,7 +107,8 @@ body{
     display: inline-block;
     height: 70px;
     width: 130px;
-    background: #fff;
+    background: #997B5F;
+    color: white;
     border-radius: 30px;
     cursor: pointer;
     text-align: center;
@@ -169,12 +175,13 @@ body{
     padding: 30px;
 }
 
-.socials .button{
+.left .socials .button{
     display: inline-block;
     height: 60px;
     width: 60px;
     margin: 0 5px;
-    background: white;
+    background: #997B5F;
+    color: white;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
@@ -184,17 +191,20 @@ body{
 
 .left .socials .facebook:hover{
     width: 190px;
-    background: #fff;
+    background: #4767B2;
+    color: white;
 }
 
 .left .socials .instagram:hover{
-    width: 200px;
-    background: #fff;
+    width: 230px;
+    background: #E1306C;
+    color: white;
 }
 
 .left .socials .twitter:hover{
     width: 170px;
-    background: #fff;
+    background: #1DA1F2;
+    color: white;
 }
 
 .socials .button .icon{
@@ -236,9 +246,23 @@ body{
 
 
 /* START OF RIGHT SIDE CODE */
-.right .badges{
-    border: solid black;
+.right .header{
     height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.right .header .pic{
+    margin-right: 30px;
+    margin-left: auto;
+}
+
+.right .header .pic img{
+    height: 80px;
+    width:  80px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .right .details{
@@ -265,7 +289,8 @@ body{
     display: inline-block;
     height: 70px;
     width: 130px;
-    background: #fff;
+    background: #997B5F;
+    color: white;
     border-radius: 30px;
     cursor: pointer;
     text-align: center;
@@ -330,11 +355,43 @@ body{
     content: "Gaming, Listening to Music, and Singing";
 }
 
+.right .socials .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    background: #997B5F;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    transition:  all 0.4s ease-out;
+    overflow: hidden;
+}
 
 .right .socials{
-    border: solid black;
     height: 10%;
     padding: 30px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.right .socials .facebook:hover{
+    width: 190px;
+    background: #4767B2;
+    color: white;
+}
+
+.right .socials .instagram:hover{
+    width: 230px;
+    background: #E1306C;
+    color: white;
+}
+
+.right .socials .twitter:hover{
+    width: 170px;
+    background: #1DA1F2;
+    color: white;
 }
 
 
