@@ -37,9 +37,8 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0%;
-    background-image: url("Images/andrea.jpg");
-    background-size: 200%;
-    background-position: -550px -350px;
+    background-image: url("Images/andrea.png");
+    background-size: cover;
     background-repeat: no-repeat;
     border-left: solid #fff 1px;
 }
