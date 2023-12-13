@@ -102,10 +102,14 @@ body{
 .left .details .button .bday:hover,
 .left .details .button .quote:hover {
     width: 300px;
+    background-color: #fff;
+    color: #997B5F;
 }
 
 .left .details .button .hobbies:hover{
     width: 500px;
+    background-color: #fff;
+    color: #997B5F;
 }
 
 .left .details .button .name::before {
@@ -167,8 +171,13 @@ body{
     overflow: hidden;
 }
 
+.left .socials a{
+    color: white;
+    text-decoration: none;
+}
+
 .left .socials .facebook:hover{
-    width: 190px;
+    width: 230px;
     background: #4767B2;
     color: white;
 }
@@ -180,7 +189,7 @@ body{
 }
 
 .left .socials .twitter:hover{
-    width: 170px;
+    width: 230px;
     background: #1DA1F2;
     color: white;
 }
@@ -291,14 +300,20 @@ body{
 .right .details .button .age:hover,
 .right .details .button .bday:hover {
     width: 300px;
+    background-color: #fff;
+    color: #997B5F;
 }
 
 .right .details .button .quote:hover{
     width: 420px;
+    background-color: #fff;
+    color: #997B5F;
 }
 
 .right .details .button .hobbies:hover{
     width: 500px;
+    background-color: #fff;
+    color: #997B5F;
 }
 
 .right .details .button .name::before {
@@ -362,20 +377,25 @@ body{
     margin-left: auto;
 }
 
+.right .socials a{
+    color: white;
+    text-decoration: none;
+}
+
 .right .socials .facebook:hover{
-    width: 190px;
+    width: 200px;
     background: #4767B2;
     color: white;
 }
 
 .right .socials .instagram:hover{
-    width: 230px;
+    width: 180px;
     background: #E1306C;
     color: white;
 }
 
 .right .socials .twitter:hover{
-    width: 170px;
+    width: 230px;
     background: #1DA1F2;
     color: white;
 }
